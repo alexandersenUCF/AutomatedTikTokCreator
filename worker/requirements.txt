@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+yt-dlp
+openai-whisper
+requests
+opencv-python
+ffmpeg-python
+pydantic
+python-dotenv
