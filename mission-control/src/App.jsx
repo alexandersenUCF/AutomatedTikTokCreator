@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Settings, Video, Search, Link2, RefreshCw } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_COORDINATOR_API_URL || 'http://localhost:3000/api';
+let API_URL = import.meta.env.VITE_COORDINATOR_API_URL || 'http://localhost:3001/api';
+// Ensure /api suffix exists if user only put the host URL
+if (!API_URL.endsWith('/api')) {
+  API_URL = `${API_URL.replace(/\/$/, '')}/api`;
+}
 
 function App() {
   const [videos, setVideos] = useState([]);

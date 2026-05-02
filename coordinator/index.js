@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const WORKER_API_URL = process.env.WORKER_API_URL || 'http://localhost:8000';
 const COORDINATOR_URL = process.env.COORDINATOR_URL || `http://localhost:${PORT}`;
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;

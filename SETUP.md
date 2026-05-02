@@ -68,13 +68,13 @@ Create a `.env` file in the `/coordinator` directory:
 
 ```env
 # Port for the Node.js Coordinator backend
-PORT=3000
+PORT=3001
 
 # The base URL of the Worker Node on the local network
 WORKER_API_URL=http://<WORKER_IP>:8000
 
 # The base URL of this Coordinator Node (so the Worker knows where to send webhooks)
-COORDINATOR_URL=http://<COORDINATOR_IP>:3000
+COORDINATOR_URL=http://<COORDINATOR_IP>:3001
 
 # Your YouTube Data API v3 Key
 YOUTUBE_API_KEY=your_youtube_api_key_here
@@ -92,7 +92,7 @@ Create a `.env` file in the `/mission-control` directory:
 
 ```env
 # Target the local Coordinator backend
-VITE_COORDINATOR_API_URL=http://<COORDINATOR_IP>:3000
+VITE_COORDINATOR_API_URL=http://<COORDINATOR_IP>:3001
 ```
 
 ---
